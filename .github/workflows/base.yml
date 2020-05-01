@@ -1,0 +1,30 @@
+name: Base
+on:
+ workflow_call:
+  inputs:
+      compiler:
+        required: true
+        type: string
+      os:
+        required: true
+        type: string
+jobs:
+  install:
+    name: Install
+    runs-on: ${{ inputs.os }}
+    env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use OCaml ${{ inputs.compiler }}
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: ${{ inputs.compiler }}
+          dune-cache: true
+
+      - name: Deps
+        run: |
+          opam remote add implicits .
+          opam install --yes `ls packages`

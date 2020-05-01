@@ -1,0 +1,8 @@
+name: Ubnuntu-implicits-ber
+on: [push, pull_request]
+jobs:
+  call-workflow-passing-data:
+    uses: ./.github/workflows/base.yml
+    with:
+      compiler: "ocaml-variants.4.02.1+modular-implicits-ber"
+      os: "ubnuntu-latest"
