@@ -19,3 +19,6 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
 
 
 ### Current packages:
+
+* [imp](https://github.com/modular-implicits/imp),
+  experimental library using modular implicits
