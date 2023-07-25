@@ -1,5 +1,11 @@
 name: macOS-implicits
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   call-workflow-passing-data:
     uses: ./.github/workflows/base.yml
