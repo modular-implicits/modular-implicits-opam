@@ -25,6 +25,8 @@ jobs:
           dune-cache: true
 
       - name: Deps
+        env:
+          compiler: ${{ inputs.compiler }}
         run: |
           opam remote add implicits .
-          opam install --yes `ls packages`
+          opam list --color=never --available --depends-on=$compiler --columns=name | sed '/^#/d' | xargs opam install --yes
