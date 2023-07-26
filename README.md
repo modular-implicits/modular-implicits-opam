@@ -1,4 +1,4 @@
-# A repository of MetaOCaml packages
+# A repository of modular implicits packages
 
 A repository of [OPAM][opam] packages for [OCaml extended with modular implicits][ocaml-modular-implicits].
 
