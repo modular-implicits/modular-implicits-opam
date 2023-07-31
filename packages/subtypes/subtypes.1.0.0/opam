@@ -1,0 +1,24 @@
+opam-version: "2.0"
+name: "subtypes"
+synopsis: "First-class subtypes for OCaml"
+maintainer: "yallop@gmail.com"
+authors: ["Stephen Dolan" "Jeremy Yallop"]
+homepage: "https://github.com/yallop/subtypes"
+dev-repo: "git+https://github.com/yallop/subtypes.git"
+bug-reports: "https://github.com/yallop/subtypes/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+depends: [
+   "dune" {build}
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+]
+
+url {
+  src: "https://github.com/yallop/subtypes/archive/refs/tags/1.0.0.tar.gz"
+  checksum: "md5=3331c9c9c9fa3db07a970a3d6a6d2e94"
+}
