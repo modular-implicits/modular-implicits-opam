@@ -1,0 +1,30 @@
+opam-version: "2.0"
+maintainer: "yallop@gmail.com"
+authors: ["Jeremy Yallop"
+          "Demi Obenour"
+          "Stephane Glondu"
+          "Andreas Hauptmann"
+          "Patrick Reader"]
+homepage: "https://github.com/modular-implicits/ocaml-integers"
+bug-reports: "https://github.com/modular-implicits/ocaml-integers/issues"
+dev-repo: "git+https://github.com/modular-implicits/ocaml-integers.git"
+license: "MIT"
+
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+  "dune"
+  "imp"
+]
+doc: "http://yallop.github.io/ocaml-integers/api.docdir/"
+synopsis: "Various signed and unsigned integer types for OCaml"
+url {
+  src: "https://github.com/modular-implicits/ocaml-integers/archive/refs/tags/0.4.0.tar.gz"
+  checksum: "sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
