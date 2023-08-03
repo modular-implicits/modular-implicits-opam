@@ -22,6 +22,8 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
 
 * [imp](https://github.com/modular-implicits/imp),
   experimental library using modular implicits
+* [syb](https://github.com/yallop/ocaml-syb),
+  OCaml version of the Scrap Your Boilerplate library
 * [metaocaml-syb](https://github.com/yallop/staged-generic-programming),
   staged version of the Scrap Your Boilerplate library
 * [subtypes](https://github.com/yallop/subtypes),
