@@ -1,0 +1,33 @@
+opam-version: "2.0"
+name: "syb"
+synopsis: "OCaml version of the Scrap Your Boilerplate library"
+maintainer: "yallop@gmail.com"
+author: "yallop@gmail.com"
+homepage: "https://github.com/yallop/ocaml-syb"
+dev-repo: "git+https://github.com/yallop/ocaml-syb.git"
+bug-reports: "http://github.com/yallop/ocaml-syb/issues"
+license: "MIT"
+build: [
+  ["./configure" "--enable-tests"]
+  [make]
+  [make "test"] {with-test}
+]
+install: [
+  [make "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "syb"]
+]
+depends: [
+   "ounit" {build}
+   "ocamlfind" {build}
+   "oasis" {build}
+   "higher"
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+]
+
+url {
+  src: "https://github.com/yallop/ocaml-syb/archive/refs/tags/1.0.0.tar.gz"
+  checksum: "md5=bc35ef3112aab09ea061aa307bf90f7f"
+}
