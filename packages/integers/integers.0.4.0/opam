@@ -26,5 +26,5 @@ doc: "http://yallop.github.io/ocaml-integers/api.docdir/"
 synopsis: "Various signed and unsigned integer types for OCaml"
 url {
   src: "https://github.com/modular-implicits/ocaml-integers/archive/refs/tags/0.4.0.tar.gz"
-  checksum: "sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  checksum: "sha256=ba6e087606c622533ecca9dc4c0917a3cc183e73e3e7d8511b68e21183ef913f"
 }
