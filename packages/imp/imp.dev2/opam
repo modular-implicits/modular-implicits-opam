@@ -1,0 +1,25 @@
+opam-version: "2.0"
+name: "imp"
+synopsis: "Experimental library using modular implicits"
+maintainer: "yallop@gmail.com"
+authors: ["Leo White" "Jeremy Yallop"]
+homepage: "https://github.com/modular-implicits/imp"
+dev-repo: "git+https://github.com/modular-implicits/imp.git"
+bug-reports: "https://github.com/modular-implicits/imp/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "dune" {build}
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+]
+
+url {
+  src: "https://github.com/modular-implicits/imp/archive/3701b83ed210cf04af4dea6a6d9dc2e9babf302e.tar.gz"
+  checksum: "sha256=5f45bae1b4372858d6e88a64a0430edd7a665d997ceb4bfe875c6ee09e0e0fb1"
+}
