@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "metaocaml-syb"
+synopsis: "Staged version of the Scrap Your Boilerplate library"
+maintainer: "yallop@gmail.com"
+author: "yallop@gmail.com"
+homepage: "https://github.com/yallop/staged-generic-programming"
+dev-repo: "git+https://github.com/yallop/staged-generic-programming.git"
+bug-reports: "http://github.com/yallop/staged-generic-programming/issues"
+license: "MIT"
+build: [
+    ["dune" "subst"] {dev}
+    ["dune" "build" "-p" name "-j" jobs]
+    ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+depends: [
+   "dune" {build}
+   "higher"
+   "delimcc"
+   "genlet"
+   "ocaml-variants"
+     {= "4.02.1+modular-implicits-ber" }
+]
+
+url {
+  src: "https://github.com/yallop/staged-generic-programming/archive/refs/tags/1.1.0.tar.gz"
+  checksum: "md5=b7e44c7d5d5e1aa8525325827278be60"
+}
