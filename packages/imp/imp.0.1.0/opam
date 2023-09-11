@@ -20,6 +20,6 @@ depends: [
 ]
 
 url {
-  src: "https://github.com/modular-implicits/imp/archive/2147615.tar.gz"
-  checksum: "sha256=3772e6fc65e249e0cbe1e82daa69c29d83ef2bd0ae5155e671a5bfd7fc17f9c2"
+  src: "https://github.com/modular-implicits/imp/archive/v0.1.0.tar.gz"
+  checksum: "sha256=9ab65f9e96da6515e790a13884a6b535075c9d2e1b09d74be9ebbcb845c452d6"
 }
