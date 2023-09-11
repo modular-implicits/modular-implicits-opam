@@ -1,6 +1,6 @@
 opam-version: "2.0"
 maintainer: "yallop@gmail.com"
-authors: ["Jeremy Yallop"]
+authors: ["Patrick Reader"]
 depopts: ["ocamlfind"]
 homepage: "https://github.com/modular-implicits/modular-implicits-opam/tree/master/packages/base-implicits/base-implicits.base"
 bug-reports: "https://github.com/modular-implicits/modular-implicits-opam/issues"
