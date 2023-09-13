@@ -5,6 +5,7 @@ A repository of [OPAM][opam] packages for [OCaml extended with modular implicits
 | ![implicits Ubuntu status](https://github.com/modular-implicits/modular-implicits-opam/workflows/Ubuntu-implicits/badge.svg) | ![implicits macOS status](https://github.com/modular-implicits/modular-implicits-opam/workflows/macOS-implicits/badge.svg) |
 |---|---|
 | ![implicits+BER Ubuntu status](https://github.com/modular-implicits/modular-implicits-opam/workflows/Ubuntu-implicits-ber/badge.svg) | ![implicits+BER macOS status](https://github.com/modular-implicits/modular-implicits-opam/workflows/macOS-implicits-ber/badge.svg) |
+| ![implicits+let-syntax Ubuntu status](https://github.com/modular-implicits/modular-implicits-opam/workflows/Ubuntu-implicits-let-syntax/badge.svg) |  |
 
 ### Setting up
 
