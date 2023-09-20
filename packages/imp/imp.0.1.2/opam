@@ -16,10 +16,10 @@ build: [
 depends: [
    "dune" {build}
    "ocaml-variants"
-     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" | = "4.02.1+modular-implicits+let_syntax"}
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" | = "4.02.1+modular-implicits+let_syntax" }
 ]
 
 url {
-  src: "https://github.com/modular-implicits/imp/archive/cd6bebc.tar.gz"
-  checksum: "sha256=0808aca43fccd378ee726890cceb46a8b947407e43514cf1b45efd50d6002969"
+  src: "https://github.com/modular-implicits/imp/archive/v0.1.2.tar.gz"
+  checksum: "sha256=b161509f2b0a47841b34fb3c678d48c21586ac2df49c91c0d490152cfcf3b012"
 }
