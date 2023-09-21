@@ -1,0 +1,26 @@
+opam-version: "2.0"
+name: "generics"
+synopsis: "Experimental Generics library using modular implicits"
+maintainer: "dvlasits@gmail.com"
+authors: ["Daniel Vlasits"]
+homepage: "https://github.com/modular-implicits/generics"
+dev-repo: "git+https://github.com/modular-implicits/generics.git"
+bug-reports: "https://github.com/modular-implicits/generics/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "dune" {build}
+   "imp"
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" | = "4.02.1+modular-implicits+let_syntax" }
+]
+
+url {
+  src: "https://github.com/modular-implicits/generics/archive/v0.1.0.tar.gz"
+  checksum: "sha256=04f74dd98a3672bc1e3f11eec824623767af42c1eb3ec2b7735f7616136a8cc2"
+}
