@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "arrows"
+synopsis: "An OCaml arrows library using modular implicits"
+version: "dev"
+maintainer: "dvlasits@gmail.com"
+authors: ["Daniel Vlasits"]
+homepage: "https://github.com/modular-implicits/Arrows"
+dev-repo: "git+https://github.com/modular-implicits/Arrows.git"
+bug-reports: "http://github.com/modular-implicits/Arrows/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "dune" {build}
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+    "imp"
+]
+
+url {
+  src: "https://github.com/modular-implicits/Arrows/archive/v0.1.0.tar.gz"
+  checksum: "sha256=b82a2ff539da5cfa0065def234f17bb61e1a6de2b068cad673654452a6865623"
+}
