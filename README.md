@@ -35,3 +35,5 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
   Various signed and unsigned integer types for OCaml (modular-implicits-ised)
 * [generics](https://github.com/modular-implicits/generics),
   Experimental Generics library using modular implicits
+* [staged-generics](https://github.com/modular-implicits/staged-generics),
+  Generics with support for staging
