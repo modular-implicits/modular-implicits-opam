@@ -37,3 +37,5 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
   Experimental Generics library using modular implicits
 * [staged-generics](https://github.com/modular-implicits/staged-generics),
   Generics with support for staging
+* [arrows](https://github.com/modular-implicits/arrows),
+  Arrows library for working in OCaml with modular implicits
