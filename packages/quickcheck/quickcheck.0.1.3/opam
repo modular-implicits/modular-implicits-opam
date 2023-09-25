@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "testing"
+name: "quickcheck"
 synopsis: "Experimental Generics library using modular implicits"
 version: "dev"
 maintainer: "dvlasits@gmail.com"
@@ -24,6 +24,6 @@ depends: [
 ]
 
 url {
-  src: "https://github.com/modular-implicits/quickchec/archive/v0.1.2.tar.gz"
-  checksum: "sha256=0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.3.tar.gz"
+  checksum: "sha256=d76d4f1053761f46748f53e553aefd38e6fcaa25ec751202e710eadb35077522"
 }
