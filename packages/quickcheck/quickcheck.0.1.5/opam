@@ -20,10 +20,9 @@ depends: [
      { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
     "imp"
     "generics"
-    "dataStructures"
 ]
 
 url {
-  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.3.tar.gz"
-  checksum: "sha256=d76d4f1053761f46748f53e553aefd38e6fcaa25ec751202e710eadb35077522"
+  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.5.tar.gz"
+  checksum: "sha256=aa90f52d53ef3300fa8d706e553408cd978ba6f9f95f3a85abe3e62557b12877"
 }
