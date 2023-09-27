@@ -1,0 +1,30 @@
+opam-version: "2.0"
+name: "searchM"
+synopsis: "Collection of generic graph search algorithms"
+maintainer: "dvlasits@gmail.com"
+authors: ["Daniel Vlasits" "Patrick Reader"]
+homepage: "https://github.com/modular-implicits/search"
+dev-repo: "git+https://github.com/modular-implicits/search.git"
+bug-reports: "http://github.com/modular-implicits/search/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+  "dune" {build}
+  "ocaml-variants"
+    { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+  "imp"
+  "dataStructures"
+]
+
+
+
+url {
+  src: "https://github.com/modular-implicits/search/archive/v0.1.0.tar.gz"
+  checksum: "sha256=8cdd63124d96a40d700691170747ce550e9949ab294780c439e4dfb54231cd5a"
+}
+
