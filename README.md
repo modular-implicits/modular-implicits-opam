@@ -41,3 +41,5 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
    Library for testing OCaml code using modular implicits
 * [dataStructures](https://github.com/modular-implicits/dataStructures),
    Data Structures library providing map and set using modular implicits.
+* [adiff](https://github.com/modular-implicits/autodiff),
+  An auto differentation library for OCaml
