@@ -35,6 +35,8 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
   Various signed and unsigned integer types for OCaml (modular-implicits-ised)
 * [generics](https://github.com/modular-implicits/generics),
   Experimental Generics library using modular implicits
+* [staged-generics](https://github.com/modular-implicits/staged-generics),
+  Generics with support for staging
 * [arrows](https://github.com/modular-implicits/arrows),
   Arrows library for working in OCaml with modular implicits
 * [quickcheckM](https://github.com/modular-implicits/quickcheck),
@@ -43,3 +45,5 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
    Data Structures library providing map and set using modular implicits.
 * [adiff](https://github.com/modular-implicits/autodiff),
   An auto differentation library for OCaml
+* [staged-generics](https://github.com/modular-implicits/staged-generics),
+  Generics with support for staging
