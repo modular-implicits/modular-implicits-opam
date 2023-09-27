@@ -3,9 +3,9 @@ name: "quickcheck"
 synopsis: "Experimental Quickcheck library using modular implicits"
 maintainer: "dvlasits@gmail.com"
 authors: ["Daniel Vlasits"]
-homepage: "https://github.com/modular-implicits/Generics"
-dev-repo: "git+https://github.com/modular-implicits/Generics.git"
-bug-reports: "http://github.com/modular-implicits/Generics/issues"
+homepage: "https://github.com/modular-implicits/Quickcheck"
+dev-repo: "git+https://github.com/modular-implicits/Quickcheck.git"
+bug-reports: "http://github.com/modular-implicits/Quickcheck/issues"
 license: "MIT"
 build: [
   ["dune" "subst"] {dev}
