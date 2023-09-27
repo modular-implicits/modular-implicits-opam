@@ -22,6 +22,6 @@ depends: [
 ]
 
 url {
-  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.6.tar.gz"
-  checksum: "sha256=e4964422bd74af2dcc8183ca6068b77a8092aff1d642ea2df5ccc7e62af26c78"
+  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.7.tar.gz"
+  checksum: "sha256=cd23b2e6dc58d19957b5c51d56db46156bf777ee2f977baa87648e3bec9dbd5c"
 }
