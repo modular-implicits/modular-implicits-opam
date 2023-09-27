@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "quickcheckM"
+synopsis: "Experimental Quickcheck library using modular implicits"
+maintainer: "dvlasits@gmail.com"
+authors: ["Daniel Vlasits"]
+homepage: "https://github.com/modular-implicits/Quickcheck"
+dev-repo: "git+https://github.com/modular-implicits/Quickcheck.git"
+bug-reports: "http://github.com/modular-implicits/Quickcheck/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "dune" {build}
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+    "imp"
+    "generics"
+]
+
+url {
+  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.8.tar.gz"
+  checksum: "sha256=a7be0ee67b51edc6c8599781dca59ef0c3f135810e96fcc34684f4b2de6def2a"
+}

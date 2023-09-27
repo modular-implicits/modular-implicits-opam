@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "dataStructures"
+synopsis: "Library providing Map and Set datastructures using modular implicits"
+maintainer: "dvlasits@gmail.com"
+authors: ["Daniel Vlasits"]
+homepage: "https://github.com/modular-implicits/DataStructures"
+dev-repo: "git+https://github.com/modular-implicits/DataStructures.git"
+bug-reports: "http://github.com/modular-implicits/DataStructures/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "dune" {build}
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+     "imp"
+]
+
+
+url {
+  src: "https://github.com/modular-implicits/datastructures/archive/v.0.1.1.tar.gz"
+  checksum: "sha256=498f9a23ae1885da19634ee7f15cb5b0e8ce1644578bf3b47e0b4dd337aa566e"
+}
