@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "adiff"
+synopsis: "Library for forward differentiation using implicits"
+maintainer: "dvlasits@gmail.com"
+authors: ["Daniel Vlasits"]
+homepage: "https://github.com/modular-implicits/autodiff"
+dev-repo: "git+https://github.com/modular-implicits/autodiff.git"
+bug-reports: "http://github.com/modular-implicits/autodiff/issues"
+license: "MIT"
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+   "dune" {build}
+   "ocaml-variants"
+     { = "4.02.1+modular-implicits" | = "4.02.1+modular-implicits-ber" }
+    "imp"
+]
+
+
+url {
+  src: "https://github.com/modular-implicits/autodiff/archive/v.0.1.0.tar.gz"
+  checksum: "sha256=8ec28170c2a61edeed7d7f7c1f8b349668690ecde4522fd85fd0803c26bacd82"
+}
