@@ -37,5 +37,7 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
   Experimental Generics library using modular implicits
 * [arrows](https://github.com/modular-implicits/arrows),
   Arrows library for working in OCaml with modular implicits
+* [quickcheckM](https://github.com/modular-implicits/quickcheck),
+   Library for testing OCaml code using modular implicits
 * [dataStructures](https://github.com/modular-implicits/dataStructures),
    Data Structures library providing map and set using modular implicits.
