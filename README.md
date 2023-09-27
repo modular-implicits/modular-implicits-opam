@@ -47,3 +47,5 @@ opam remote add implicits git+https://github.com/modular-implicits/modular-impli
   An auto differentation library for OCaml
 * [staged-generics](https://github.com/modular-implicits/staged-generics),
   Generics with support for staging
+* [searchM](https://github.com/modular-implicits/Search),
+  Providing highly polymorphic searching algorithms
