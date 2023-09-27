@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "quickcheck"
+name: "quickcheckM"
 synopsis: "Experimental Quickcheck library using modular implicits"
 maintainer: "dvlasits@gmail.com"
 authors: ["Daniel Vlasits"]
@@ -22,6 +22,6 @@ depends: [
 ]
 
 url {
-  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.7.tar.gz"
-  checksum: "sha256=cd23b2e6dc58d19957b5c51d56db46156bf777ee2f977baa87648e3bec9dbd5c"
+  src: "https://github.com/modular-implicits/quickcheck/archive/v0.1.8.tar.gz"
+  checksum: "sha256=a7be0ee67b51edc6c8599781dca59ef0c3f135810e96fcc34684f4b2de6def2a"
 }
